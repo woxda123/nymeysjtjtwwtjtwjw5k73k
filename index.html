@@ -129,7 +129,7 @@ input[type=text]{width:100%;padding:12px;border-radius:12px;border:2px solid var
 var $=function(i){return document.getElementById(i)};
 var TG=window.Telegram&&Telegram.WebApp,TU=null;
 try{if(TG){TG.ready();TG.expand();TU=TG.initDataUnsafe&&TG.initDataUnsafe.user}}catch(e){}
-var BOT_LINK='https://t.me/woxmat_bot/app', WS_URL='play';
+var BOT_LINK='http://t.me/woxmat_bot/play', WS_URL='https://woxmat.netlify.app/';
 var S={name:'',bio:'',sound:1,hap:1,hint:1,co:1,th:'auto',bc:0,r:1200,w:0,l:0,d:0,pz:0,lv:2,tc:300,cl:'w'};
 try{var x=JSON.parse(localStorage.getItem('wm2')||'null');if(x)for(var k in x)S[k]=x[k]}catch(e){}
 function sv(){try{localStorage.setItem('wm2',JSON.stringify(S))}catch(e){}}
